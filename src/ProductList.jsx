@@ -226,6 +226,7 @@ function ProductList() {
     justifyContent: 'space-between',
     alignItems: 'center',
     width: '1100px',
+    paddingLeft: '1em',
    }
    const styleA={
     color: 'white',
@@ -248,18 +249,17 @@ const handlePlantsClick = (e) => {
   };
     return (
         <div>
-             <div className="navbar" style={styleObj}>
+            <div className="navbar" style={styleObj}>
             <div className="tag">
-               <div className="luxury">
-               <img src="https://cdn.pixabay.com/photo/2020/08/05/13/12/eco-5465432_1280.png" alt="" />
-               <a href="/" style={{textDecoration:'none'}}>
-                        <div>
-                    <h3 style={{color:'white'}}>Paradise Nursery</h3>
-                    <i style={{color:'white'}}>Where Green Meets Serenity</i>
-                    </div>
+                <div className="luxury">
+                    <img src="https://cdn.pixabay.com/photo/2020/08/05/13/12/eco-5465432_1280.png" alt="" />
+                    <a href="/" style={{textDecoration:'none'}}>
+                        <div className='tag_home_link'>
+                            <h3 style={{color:'white'}}>Paradise Nursery</h3>
+                            <i style={{color:'white'}}>Where Green Meets Serenity</i>
+                        </div>
                     </a>
                 </div>
-              
             </div>
             <div style={styleObjUl}>
                 <div> <a href="#" onClick={(e)=>handlePlantsClick(e)} style={styleA}>Plants</a></div>
